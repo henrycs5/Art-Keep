@@ -1,0 +1,79 @@
+<!doctype html>
+<!--
+  
+  Name: Henry Chiang 
+  Date: 9/4/26
+
+  The [PROFILE] page of Art Keep! It allows the user to change their profile picture and 
+  description for self-serving purposes since we aren't using servers. :`)
+
+ -->
+
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="profile.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="highlight" class="center-text">
+            <div class="nav-icon">
+                <a href="profile.html" id="selected">
+                    <img src="Images/profile-icon.png" alt="Profile Icon: A simple white outline of a person with a 
+                    circular head and body (bust shot) on a gray background.">
+                </a>
+            </div>
+            <h1>Profile</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form method="post" enctype="multipart/form-data"></form>
+            <div id="profile-image">
+                <img id="profile-picture" src="Images/placeholder.png" alt="A placeholder icon featuring my two characters: Lara and Skye in a movie theater. 
+                Lara is pouring popcorn on herself while Skye chuckles.">
+                <div id="overlay-file"><input type="file" id="profile-file" name="profile-file" accept=".jpg, .jpeg, .png, .gif"></div>
+            </div>
+        </section>
+        <section id="profile-description">
+            <div>
+                <label for="description">Description </label>
+                <button id="edit-description">Edit</button>
+            </div>
+            <textarea id="description" name="User's Description" placeholder="Click edit to change your description!"
+                readonly></textarea>
+        </section>
+    </main>
+    <footer>
+        <nav class="nav-icon" id="mobile-footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="Images/info-icon.png" alt="Info Icon: A white question mark on a purple background.">
+                    </a>
+                </li>
+                <li>
+                    <a href="my-art.html">
+                        <img src="Images/my-art-icon.png" alt="My Art Icon: White pencil with a red background.">
+                    </a>
+                </li>
+                <li>
+                    <a href="history.html">
+                        <img src="Images/history-icon.png" alt="History Icon: A white counter clockwise loop with an arrow having 
+                        an L in the middle with an orange background.">
+                    </a>
+                </li>
+            </ul>
+            <p><strong>&copy; 2026 COPYRIGHT: All rights belong to Art Keep, unless stated otherwise, and is owned by
+                    Henry Chiang.
+                </strong></p>
+        </nav>
+    </footer>
+</body>
+
+</html>

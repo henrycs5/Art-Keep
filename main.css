@@ -1,0 +1,312 @@
+/*
+    Name: Henry Chiang
+
+    Date: 9/4/26
+    Styles the <nav> bars, profile, and textArea description.
+
+    - Manipulated Background Paper Pattern as the Background: 
+    https://www.magnific.com/free-photo/white-crumpled-paper-texture-background_1189775.htm
+*/
+
+@media(width >= 1040px) {
+    #mobile-footer, #profile-description, #info-page-layout, #art-gallery,
+    .center-text, #history-box {
+        width: 1020px;
+    }
+
+    #upload-box {
+        width: 1000px;
+    }
+}
+
+@media(1040px > width >= 840px) {
+    #mobile-footer, #profile-description, #info-page-layout, #art-gallery,
+    .center-text, #history-box {
+        width: 820px;
+    }
+    
+    #upload-box {
+        width: 800px;
+    }
+}
+
+.nav-icon img {
+    height: 100px;
+    width: auto;
+    border-radius: 10px;
+}
+
+#selected img {
+    border: solid 10px;
+    border-color: black;
+}
+
+@media(840px > width >= 640px) {
+    #mobile-footer, #profile-description, #info-page-layout, #art-gallery,
+    .center-text, #history-box {
+        width: 620px;
+    }
+
+    #upload-box {
+        width: 600px;
+    }
+}
+
+@media(640px > width >= 440PX) {
+    #mobile-footer, #profile-description, #info-page-layout, #art-gallery,
+    .center-text, #history-box {
+        width: 420px
+    }
+
+    #upload-box {
+        width: 400px;
+    }
+
+    .nav-icon img {
+        height: 90px;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    #selected img {
+        border: solid 8px;
+        border-color: black;
+    }
+}
+
+@media(440px > width) {
+    .nav-icon img {
+        height: 75px;
+        width: auto;
+        border-radius: 5px;
+    }
+
+    #upload-box {
+        margin-inline: 10px;
+    }
+
+    #selected img {
+        border: solid 5px;
+        border-color: black;
+    }
+}
+
+body {
+    background-image: url("Images/paper-texture.png");
+}
+
+body, textarea, label, input, button {
+    font-family: "Arial Narrow Bold", sans-serif;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    display: flex;
+    margin-inline: 10px;
+    justify-content: center;
+}
+
+#highlight {
+    border-radius: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+
+#mobile-footer {
+    /* position: fixed;
+    bottom: 0px; */
+    padding: 10px;
+    justify-self: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#mobile-footer ul {
+    margin: 0;
+}
+
+#mobile-footer p {
+    padding-inline: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#profile-image {
+    display: grid;
+    justify-content: center;
+    width: 250px;
+    justify-self: center;
+}
+
+#profile-image img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: grey solid 5px;
+}
+
+#overlay-file {
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+#overlay-file input {
+    color: transparent;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    height: 25px;
+    width: 115px;
+    bottom: 40px;
+    left: 220px;
+    /* z-index: 67; */
+}
+
+#center-profile button {
+    width: 60px;
+    height: auto;
+}
+
+#profile-description {
+    display: grid;
+    justify-self: center;
+    height: 150px;
+}
+
+#profile-description textarea {
+    resize: none;
+    height: 100px;
+}
+
+#profile-description button {
+    justify-self: right;
+    width: 75px;
+    height: auto;
+}
+
+#info-page-layout {
+    justify-self: center;
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#info-page-layout li {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#info-page-layout img {
+    width: 50px;
+    height: 50px;
+    margin-inline: 10px;
+}
+
+#upload-box {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(78, 178, 255);
+}
+
+#upload-box ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+#file-right {
+    display: flex;
+    margin-right: auto;
+    margin-left: 5px;
+    align-items: center;
+}
+
+#file-right input {
+    display: flex;
+    color: transparent;
+    width: 120px;
+    margin-right: 0px;
+}
+
+#art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#art-gallery li, ul {
+    list-style: none;
+    padding: 0;
+}
+
+#art-gallery img {
+    height: 200px;
+    width: auto;
+}
+
+#history-box {
+    justify-self: center;
+}
+
+#history-box p {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding-inline: 20px;
+}
+
+#current-profile {
+    display: flex;
+    justify-self: center;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: grey solid 5px;
+}
+
+#clear-data {
+    display: flex;
+    justify-content: center;
+}
+
+#clear-data button {
+    width: 150px;
+    height: 75px;
+}
+
+.center-text {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.nav-icon ul {
+    justify-content: space-evenly;
+}

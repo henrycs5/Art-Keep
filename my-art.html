@@ -1,0 +1,93 @@
+<!doctype html>
+<!--
+  
+  Name: Henry Chiang 
+  Date: 9/10/26
+
+  This is the [MY ART] page of Art Keep. It allows the user to upload their files in bulk and see 
+  the results in real time!
+
+  NOTE: localStorage data is restricted to 5 mbs combined.
+  So please keep compress your images to around 100 kbs :)
+
+ -->
+
+<html lang="en">
+
+<head>
+    <title>My Art</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="my-art.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="highlight" class="center-text">
+            <div class="nav-icon">
+                <a href="profile.html">
+                    <img src="Images/profile-icon.png" alt="Profile Icon: A simple white outline of a person with a 
+                    circular head and body (bust shot) on a gray background.">
+                </a>
+            </div>
+            <h1>My Art</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Upload Your Art!</h2>
+            <div id="upload-box">
+                <ul>
+                    <li>
+                        <p>
+                            <strong>
+                                NOTE: Please do not upload an image file or files over 5 MB combined
+                                on all uploads. This includes both the profile picture and description.
+                            </strong>
+                            In a nutshell this app uses something called localStorage
+                            which is very limiting to how much information is stored.
+                            Art Keep is not response for any loss of data. To minimize
+                            this risk please try uploading the smallest file sizes to ~100 kbs.
+                        </p>
+                    </li>
+                    <li id="file-right">
+                        <form>
+                            <input type="file" id="art-file" name="art-file" accept=".jpg, .jpeg, .png, .gif" multiple>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <ul id="art-gallery"></ul>
+        </section>
+    </main>
+    <footer>
+        <nav class="nav-icon" id="mobile-footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="Images/info-icon.png" alt="Info Icon: A white question mark on a purple background.">
+                    </a>
+                </li>
+                <li>
+                    <a href="my-art.html" id="selected">
+                        <img src="Images/my-art-icon.png" alt="My Art Icon: White pencil with a red background.">
+                    </a>
+                </li>
+                <li>
+                    <a href="history.html">
+                        <img src="Images/history-icon.png" alt="History Icon: A white counter clockwise loop with an arrow having 
+                        an L in the middle with an orange background.">
+                    </a>
+                </li>
+            </ul>
+            <p><strong>&copy; 2026 COPYRIGHT: All rights belong to Art Keep, unless stated otherwise, and is owned by
+                    Henry Chiang.
+                </strong></p>
+        </nav>
+    </footer>
+</body>
+
+</html>

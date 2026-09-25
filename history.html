@@ -1,0 +1,91 @@
+<!doctype html>
+<!--
+  
+  Name: Henry Chiang 
+  Date: 9/10/26
+
+  This is the [HISTORY] page of Art Keep. It allows the user to see past actions on changing profile 
+  picture, profile picture, and adding/removing art. 
+
+ -->
+
+<html lang="en">
+
+<head>
+    <title>History</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="history.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="highlight" class="center-text">
+            <div class="nav-icon">
+                <a href="profile.html">
+                    <img src="Images/profile-icon.png" alt="Profile Icon: A simple white outline of a person with a 
+                    circular head and body (bust shot) on a gray background.">
+                </a>
+            </div>
+            <h1>History</h1>
+        </nav>
+    </header>
+    <main>
+        <div id="history-box">
+            <section>
+                <h2>Note</h2>
+                <p>Art Keep stores data of the user's current profile, description, and any images in
+                    My Art. At any time, the user is welcome to clear all their data.
+                </p>
+            </section>
+            <section>
+                <h2>Current Profile Picture</h2>
+                <img id="current-profile" src="Images/placeholder.png" alt="A placeholder icon featuring my two characters: Lara and Skye in a movie theater. 
+            Lara is pouring popcorn on herself while Skye chuckles.">
+            </section>
+            <section>
+                <h2>Current Description</h2>
+                <p id="current-description">Absolutely nothing...</p>
+            </section>
+            <section>
+                <h2>Current Files in My Art</h2>
+                <p id="art-history">Art Files: 0</p>
+            </section>
+            <section>
+                <h2>Reset Data</h2>
+                <div id="clear-data">
+                    <label for="reset-data"></label>
+                    <button id="reset-data"><strong>Delete?</strong></button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav class="nav-icon" id="mobile-footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="Images/info-icon.png" alt="Info Icon: A white question mark on a purple background.">
+                    </a>
+                </li>
+                <li>
+                    <a href="my-art.html">
+                        <img src="Images/my-art-icon.png" alt="My Art Icon: White pencil with a red background.">
+                    </a>
+                </li>
+                <li>
+                    <a href="history.html" id="selected">
+                        <img src="Images/history-icon.png" alt="History Icon: A white counter clockwise loop with an arrow having 
+                        an L in the middle with an orange background.">
+                    </a>
+                </li>
+            </ul>
+            <p><strong>&copy; 2026 COPYRIGHT: All rights belong to Art Keep, unless stated otherwise, and is owned by
+                    Henry Chiang.
+                </strong></p>
+        </nav>
+    </footer>
+</body>
+
+</html>
