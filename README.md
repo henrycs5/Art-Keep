@@ -1,6 +1,5 @@
 # Art-Keep
-A simple art website app that stores image file uploads using localStorage.
-https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+This is my second website and the first website where I used media queries to adjust for horizontal sizes since this was originally designed as an web app for mobile devices. There are definitely improvements I could do but I think it's alright in it's current state. Don't think I'd revisit developing this but maybe in another project I could integrate a more robust storage system like IndexDB.
 
 # CSE 195 at the University of Washington (2026)
 - Program: Allen Scholars Summer Bridge (Aug. 25 - Sep. 18)
